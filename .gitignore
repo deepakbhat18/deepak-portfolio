@@ -1,0 +1,33 @@
+# ----- Ignore resume PDFs -----
+*.pdf
+
+# ----- Ignore images -----
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.svg
+
+# ----- Ignore documents -----
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.zip
+*.rar
+
+# ----- System files -----
+.DS_Store
+Thumbs.db
+
+# ----- IDE junk -----
+.vscode/
+.idea/
+*.log
+
+# ----- Node or build folders (if any added later) -----
+node_modules/
+dist/
+build/

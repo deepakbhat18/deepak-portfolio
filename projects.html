@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Deepak Bhat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="index.html">Deepak<span> Bhat</span></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Projects</h1>
+            <p>Selected academic and personal projects showing my work as a student developer.</p>
+        </div>
+    </section>
+
+<section class="section">
+    <div class="container projects-grid projects-page">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+            <span class="project-tag">Full-Stack · Featured</span>
+            <h2>HealthOne+ – OralCare System</h2>
+            <p>
+                A comprehensive web application where users can manage dental medical records,
+                appointments, prescriptions, and health analytics from a single dashboard.
+            </p>
+            <ul class="project-meta">
+                <li>Implemented role-based access for patients, doctors, and admins.</li>
+                <li>Integrated secure storage for reports and prescriptions using Supabase.</li>
+                <li>Designed clean UI for viewing health history and upcoming appointments.</li>
+            </ul>
+            <p class="resume-tech">
+                <strong>Tech:</strong> React, Flask, Supabase (PostgreSQL + Storage)
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/Deepakbhat-18/healthone-plus" target="_blank">GitHub Repo</a>
+                <!-- <a href="#" target="_blank">Live Demo</a> -->
+            </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+            <span class="project-tag">Web App · Academic</span>
+            <h2>BookMySlot</h2>
+            <p>
+                Booking system for scheduling appointments for events, doctors, and college faculty
+                with a simple interface for students and admins.
+            </p>
+            <ul class="project-meta">
+                <li>Created modules for managing slots, bookings, and user information.</li>
+                <li>Built basic admin dashboard to view and manage all bookings.</li>
+                <li>Designed database schema to avoid double-booking conflicts.</li>
+            </ul>
+            <p class="resume-tech">
+                <strong>Tech:</strong> React Native, Spring Boot, MySQL
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/Deepakbhat-18/bookmyslot" target="_blank">GitHub Repo</a>
+            </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+            <span class="project-tag">Backend System</span>
+            <h3>Civic Issue Tracker</h3>
+            <p>
+                RESTful backend service to log civic issues, track their status,
+                and maintain an issue timeline for transparency.
+            </p>
+            <ul class="project-meta">
+                <li>Supports roles: citizen, officer, admin with proper permission checks.</li>
+                <li>Stores status history for each issue for future reference.</li>
+            </ul>
+            <p class="resume-tech">
+                <strong>Tech:</strong> Java, Spring Boot, PostgreSQL
+            </p>
+        </article>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>© <span id="year"></span> Deepak Bhat. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Deepakbhat-18" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/deepakrbhat" target="_blank">LinkedIn</a>
+            <a href="mailto:deepakravindrabhat@gmail.com">Email</a>
+            <!-- TODO: replace with your real email -->
+        </div>
+    </div>
+</footer>
+
+<button id="back-to-top" title="Back to top">↑</button>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deepak Bhat | Student Portfolio & Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio and resume website of Your Name, a computer science student and aspiring software engineer.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="index.html">Deepak<span> Bhat</span></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section (Student Version) -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="subtitle">Hello, I'm</p>
+                <h1>Deepak Bhat</h1>
+                <h2>Computer Science Student & Aspiring Software Engineer</h2>
+                <p class="hero-desc">
+                    I'm a passionate computer science student who loves building web applications,
+                    solving DSA problems, and understanding how real products are built.
+                    I'm actively looking for software development internships and entry-level SDE roles.
+                </p>
+                <div class="hero-actions">
+                    <a href="resume.html" class="btn primary-btn">View Resume</a>
+                    <a href="projects.html" class="btn secondary-btn">View Projects</a>
+                </div>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-number">3rd</span>
+                        <span class="highlight-label">Year Student</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">5</span>
+                        <span class="highlight-label">Academic Projects</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">50+</span>
+                        <span class="highlight-label">DSA Problems Solved</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-card">
+                <div class="profile-image">
+                    <!-- Replace profile.jpg with your photo -->
+                    <img src="profile.jpg" alt="Deepak Bhat">
+                </div>
+                <div class="profile-info-card">
+                    <p><strong>Degree:</strong> B.E in Computer Science</p>
+                    <p><strong>College:</strong>    CMR Institute Of Technology,Bengaluru</p>
+                    <p><strong>Graduation:</strong> 2027</p>
+                    <p><strong>Looking For:</strong> SDE Intern · Full-time Fresher</p>
+                    <a href="Deepak_Bhat_Resume.pdf" class="btn outline-btn" target="_blank">Download PDF Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Snapshot -->
+    <section class="section light-section" id="skills-snapshot">
+        <div class="container">
+            <h2 class="section-title">Core Skills</h2>
+            <p class="section-subtitle">Building my foundations and applying them in real projects.</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Java, Python, C basics, Object-Oriented Programming, DSA</p>
+                    <div class="skill-bar" data-skill="85">
+                        <div class="skill-bar-inner"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML5, CSS3, JavaScript, basic React, basic Spring Boot, basic Flask</p>
+                    <div class="skill-bar" data-skill="80">
+                        <div class="skill-bar-inner"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Databases & Tools</h3>
+                    <p>MySQL, PostgreSQL, Git & GitHub, basic Supabase</p>
+                    <div class="skill-bar" data-skill="75">
+                        <div class="skill-bar-inner"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <p>Problem-Solving, Teamwork, Communication, Willingness to Learn</p>
+                    <div class="skill-bar" data-skill="90">
+                        <div class="skill-bar-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="section" id="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+                A quick look at some of my academic and personal projects.
+            </p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <span class="project-tag">Full-Stack</span>
+                    <h3>OralCare System</h3>
+                    <p>
+                        Academic project: a personal health platform for managing reports,
+                        prescriptions, appointments, and analytics in one place.
+                    </p>
+                    <ul class="project-meta">
+                        <li>React · Flask · Supabase</li>
+                        <li>Role-based access for patients & doctors</li>
+                    </ul>
+                    <a href="projects.html" class="project-link">View details →</a>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-tag">Web App</span>
+                    <h3>BookMySlot – Booking System</h3>
+                    <p>
+                        Slot booking system for events, doctors, and college faculty with
+                        availability management and basic admin panel.
+                    </p>
+                    <ul class="project-meta">
+                        <li>Spring Boot · MySQL</li>
+                        <li>Built as a mini project</li>
+                    </ul>
+                    <a href="projects.html" class="project-link">View details →</a>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-tag">Backend</span>
+                    <h3>Civic Issue Tracker API</h3>
+                    <p>
+                        Backend APIs for tracking civic issues, status, and user roles with
+                        email-based notifications and timelines.
+                    </p>
+                    <ul class="project-meta">
+                        <li>Java · Spring Boot · PostgreSQL</li>
+                        <li>Designed RESTful endpoints and models</li>
+                    </ul>
+                    <a href="projects.html" class="project-link">View details →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>© <span id="year"></span> Deepak Bhat. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Deepakbhat-18" target="_blank">GitHub</a>
+             <a href="https://www.linkedin.com/in/deepakrbhat" target="_blank">LinkedIn</a>
+            <a href="mailto:youremail@example.com">Email</a>
+        </div>
+    </div>
+</footer>
+
+<button id="back-to-top" title="Back to top">↑</button>
+
+<!-- jQuery + JS -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

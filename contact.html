@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Deepak Bhat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-container">
+        <div class="logo">
+<a href="index.html">Deepak<span> Bhat</span></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Let’s talk about internships, projects, or opportunities to work together.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container contact-layout">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>
+                    I'm open to software development internships, entry-level roles, and
+                    interesting collaboration opportunities. Feel free to reach out to me via
+                    email or LinkedIn, or send a message using the form.
+                </p>
+                <ul class="contact-list">
+                    <li><span>Email:</span> <a href="mailto:deepakravindrabhat@gmail.com">deepakravindrabhat@gmail.com</a></li>
+                    <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/deepakrbhat" target="_blank">linkedin.com/in/deepakrbhat</a></li>
+                    <li><span>GitHub:</span> <a href="https://github.com/Deepakbhat-18" target="_blank">github.com/Deepakbhat-18</a></li>
+                    <li><span>Location:</span> Bengaluru, India</li>
+                </ul>
+            </div>
+
+            <div class="contact-form-card">
+                <h2>Send a Message</h2>
+                <!-- Client-side only (no backend). You can connect it to an API later. -->
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email<span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject<span>*</span></label>
+                        <input type="text" id="subject" name="subject" placeholder="Reason for contacting" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message<span>*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                    <p class="form-status" id="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>© <span id="year"></span> Deepak Bhat. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Deepakbhat-18" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/deepakrbhat" target="_blank">LinkedIn</a>
+            <a href="mailto:deepakravindrabhat@gmail.com">Email</a>
+        </div>
+    </div>
+</footer>
+
+<button id="back-to-top" title="Back to top">↑</button>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
