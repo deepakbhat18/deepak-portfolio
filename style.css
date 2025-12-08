@@ -1,4 +1,3 @@
-/* ========== RESET & BASICS ========== */
 *,
 *::before,
 *::after {
@@ -25,8 +24,6 @@ body {
     max-width: 1120px;
     margin: 0 auto;
 }
-
-/* ========== HEADER & NAVIGATION ========== */
 .site-header {
     position: sticky;
     top: 0;
@@ -91,7 +88,7 @@ body {
     width: 100%;
 }
 
-/* Mobile Nav Toggle */
+
 .nav-toggle {
     display: none;
     background: none;
@@ -107,7 +104,7 @@ body {
     background: #111827;
 }
 
-/* ========== HERO SECTION ========== */
+
 
 .hero {
     padding: 4rem 0 3rem;
@@ -212,7 +209,6 @@ body {
     background: #eff6ff;
 }
 
-/* Hero Highlights */
 
 .hero-highlights {
     display: flex;
@@ -270,8 +266,6 @@ body {
     text-align: center;
 }
 
-/* ========== GENERIC SECTIONS ========== */
-
 .section {
     padding: 3rem 0;
 }
@@ -298,7 +292,6 @@ body {
     margin-bottom: 2rem;
 }
 
-/* ========== SKILLS GRID ========== */
 
 .skills-grid {
     display: grid;
@@ -340,7 +333,6 @@ body {
     transition: width 1.1s ease-out;
 }
 
-/* ========== PROJECTS ========== */
 
 .projects-grid {
     display: grid;
@@ -417,8 +409,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* ========== PAGE HERO (OTHER PAGES) ========== */
-
 .page-hero {
     padding: 3rem 0 2.3rem;
     background: #f9fafb;
@@ -439,7 +429,7 @@ body {
     color: #6b7280;
 }
 
-/* ========== ABOUT PAGE LAYOUT ========== */
+
 
 .about-layout {
     display: grid;
@@ -494,7 +484,6 @@ body {
     font-weight: 600;
 }
 
-/* ========== RESUME PAGE ========== */
 
 .resume-layout {
     display: grid;
@@ -550,7 +539,7 @@ body {
     color: #2563eb;
 }
 
-/* Skill / tag chips */
+
 
 .tag-list {
     list-style: none;
@@ -573,7 +562,6 @@ body {
     background: #ecfdf5;
 }
 
-/* ========== CONTACT PAGE ========== */
 
 .contact-layout {
     display: grid;
@@ -671,7 +659,7 @@ textarea:focus {
     margin-top: 0.4rem;
 }
 
-/* ========== FOOTER ========== */
+
 
 .site-footer {
     padding: 1.6rem 0 1.4rem;
@@ -700,7 +688,7 @@ textarea:focus {
     text-decoration: underline;
 }
 
-/* ========== BACK TO TOP BUTTON ========== */
+
 
 #back-to-top {
     position: fixed;
@@ -717,7 +705,6 @@ textarea:focus {
     display: none;
 }
 
-/* ========== RESPONSIVE ========== */
 
 @media (max-width: 900px) {
     .hero-content,

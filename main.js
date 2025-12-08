@@ -1,11 +1,10 @@
-// main.js
+
 $(document).ready(function () {
     // Mobile nav toggle
     $('#nav-toggle').on('click', function () {
         $('.main-nav').toggleClass('open');
     });
 
-    // Back to top button show/hide
     const backToTop = $('#back-to-top');
 
     $(window).on('scroll', function () {
@@ -47,7 +46,7 @@ $(document).ready(function () {
     $(window).on('scroll resize', animateSkillBars);
     animateSkillBars();
 
-    // Contact form (client-side only)
+    // Contact form 
     $('#contact-form').on('submit', function (e) {
         e.preventDefault();
         const name = $('#name').val().trim();
@@ -61,7 +60,6 @@ $(document).ready(function () {
             return;
         }
 
-        // Fake success message (no backend here)
         statusEl.text('Thank you! Your message has been noted.').css('color', '#22c55e');
         $(this)[0].reset();
     });
