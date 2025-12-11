@@ -5,7 +5,6 @@ $(document).ready(function () {
         $('.main-nav').toggleClass('open');
     });
 
-
     const backToTop = $('#back-to-top');
 
     $(window).on('scroll', function () {
