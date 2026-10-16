@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/Deepak_Bhat_Resume.pdf";
-import { AiOutlineDownload } from "react-icons/ai";
+import { AiOutlineDownload, AiOutlinePrinter } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -19,15 +19,24 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", position: "relative", gap: "12px" }}>
           <Button
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "220px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
+          </Button>
+          <Button
+            variant="outline-primary"
+            onClick={() => window.print()}
+            className="print-cv-btn"
+            style={{ maxWidth: "220px" }}
+          >
+            <AiOutlinePrinter />
+            &nbsp;Print / Save CV
           </Button>
         </Row>
 
@@ -37,15 +46,24 @@ function ResumeNew() {
           </Document>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", position: "relative", gap: "12px" }}>
           <Button
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "220px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
+          </Button>
+          <Button
+            variant="outline-primary"
+            onClick={() => window.print()}
+            className="print-cv-btn"
+            style={{ maxWidth: "220px" }}
+          >
+            <AiOutlinePrinter />
+            &nbsp;Print / Save CV
           </Button>
         </Row>
       </Container>
